@@ -1,4 +1,4 @@
-# Assignment Module-18: Migration & Relationship in Laravel
+# Assignment Module-18: Migration & Relationship in Laravel 
 
 ### Name- Md. Shahidul Islam. Contact- +8801834348932
 
@@ -7,7 +7,7 @@
 
 Create a new migration Command: 
 Run: php artisan make: migration create_categories 
-
+```
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -39,7 +39,7 @@ return new class extends Migration
 };
 
 Run: php artisan migrate  
-
+```
 ## Task 2: Create a new model named `Category` associated with the `categories` table.
 
 The Category model is associated with the `categories` table. It has a relationship with the Post model, where a Category can have multiple Posts.
