@@ -4,7 +4,41 @@
 
 ## Task 1: Create a new migration file to add a new table named "categories" to the database.
 
-you would find these in the `database/migrations` directory of the Laravel project.
+
+Create a new migration Command: 
+Run: php artisan make:migration create_categories 
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('categories', function (Blueprint $table) {
+            $table->id();
+            $table->string('name',50);
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('categories');
+    }
+};
+
+Run: php artisan migrate  
 
 ## Task 2: Create a new model named `Category` associated with the `categories` table.
 
