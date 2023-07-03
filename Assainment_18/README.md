@@ -6,7 +6,7 @@
 
 
 Create a new migration Command: 
-Run: php artisan make:migration create_categories 
+Run: php artisan make: migration create_categories 
 
 <?php
 
