@@ -1,6 +1,6 @@
-# Assignment Module 18
+# Assignment Module-18: Migration & Relationship in Laravel
 
-### _Name- Md.Shahidul Islam. Contact- +8801834348932
+### Name- Md. Shahidul Islam. Contact- +8801834348932
 
 ## Task 1: Create a new migration file to add a new table named "categories" to the database.
 
